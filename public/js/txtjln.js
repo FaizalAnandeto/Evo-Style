@@ -1,3 +1,3 @@
-const txt = document.querySelector(".txt").cloneNode(true);
+const txt = document.getElementById('txt').cloneNode(true);
 
-document.querySelector('.txtjln').appendChild(txt);
+document.getElementById('txtjln').appendChild(txt);

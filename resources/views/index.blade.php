@@ -13,43 +13,49 @@
     <link rel="preconnect" href="htpps://fonts.gstatic.com" crossorigin>
     <link href="htpps://fonts.googleapis.com/css2? family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="js/script.js">
-    <link rel="stylesheet" href="js/gmbr.js">
-    <link rel="stylesheet" href="js/txtjln.js">
+    <style type="text/tailwindcss">
+        @theme {
+            --animate-jln: jln 5s linear infinite;
+            @keyframes jln {
+                0%{
+                    transform: translateX(0);
+                }
+                100%{
+                    transform: translateX(-100%);
+                }
+            }
+            --font-monserrat: "Montserrat", serif;
+            --font-jersey: "Jersey 25", serif;
+        }
+      </style>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Evo Style</title>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="hac">
-                <div class="tb">
+        <nav class="flex justify-between w-full h-14 px-4 font-monserrat">
+            <div class="flex">
+                <div class="my-auto hidden">
                 <i class="fa-solid fa-bars"></i>
                 </div>
-                <ul>
-                    <li><a href="#" id="home">Home</a></li>
-                    <li><a href="#" id="about">About</a></li>
-                    <li><a href="#" id="collect">Collection</a></li>
-                </ul>
+                <div class="flex my-auto w-full space-x-6">
+                    <a class="no-underline text-black" href="#" id="home">Home</a>
+                    <a class="no-underline text-black" href="#" id="about">About</a>
+                    <a class="no-underline text-black" href="#" id="collect">Collection</a>
+                </div>
             </div>
-            <div class="jdl">
+            <div class="my-auto font-monserrat font-bold text-2xl  ">
                 <h1>Evo Style</h1>
             </div>
-            <div class="acc">
-                <ul>
-                    <li><a href="#">My Account</a></li>
-                    <li><a href="#">Cart</a></li>
-                </ul>
-                <a href=""><img src="Asset/shopping-bag.png" alt=""></a>
+            <div class="flex my-auto">
+                <div class="space-x-6">
+                    <a class="no-underline text-black" href="#">My Account</a>
+                    <a class="no-underline text-black" href="#">Cart</a>
+                </div>
+                <a href=""><img src="Asset/shopping-bag.png" class="w-7" ></a>
             </div>
         </nav>
-        
-        <div class="dm">
-            <li><a href="#" id="home">Home</a></li>
-            <li><a href="#" id="about">About</a></li>
-            <li><a href="#" id="collect">Collection</a></li>
-        </div>
-        <script>
+        <!--script>
             document.getElementById('home').addEventListener('click', function(event) {
                 event.preventDefault();
                 const bottomSection = document.getElementById('clt');
@@ -67,26 +73,29 @@
                 const bottomSection = document.getElementById('crtul');
                 bottomSection.scrollIntoView({ behavior: 'smooth' });
             });
-        </script>
+        </script-->
         </header>
         <Main>
-            <div class="clt" id="clt">
-                <img src="Asset/Virtualthreads 1.png" alt="Collection" id="image1">
+            <div class="" id="clt">
+                <img src="Asset/Virtualthreads 1.png" class="px-4 " alt="Collection" id="image1">
             </div>
     
-            <div id="txtjln" class="txtjln">
-                <div id="txt" class="txt">
-                <h2 class="eys">elevating your style</h2>
-                <img class="allert" src="Asset/alert-triangle.png" alt="">
-                <h2 class="eys">elevating your style</h2>
-                <img class="allert" src="Asset/alert-triangle.png" alt="">
-                <h2 class="eys">elevating your style</h2>
-                <img class="allert" src="Asset/alert-triangle.png" alt="">
-                <h2 class="eys">elevating your style</h2>
-                <img class="allert" src="Asset/alert-triangle.png" alt="">
-                <h2 class="eys">elevating your style</h2>
-                <img class="allert" src="Asset/alert-triangle.png" alt="">
+            <div id="txtjln" class="flex truncate py-10 ">
+                <div id="txt" class="flex bg-gray-800 space-x-5 w-full md:py-3 animate-jln">
+                <h2 class="my-auto font-jersey text-white text-6xl max-w-none ">elevating your style</h2>
+                <img class="md:w-20 max-w-none " src="Asset/alert-triangle.png" alt="">
+                <h2 class="my-auto font-jersey text-white text-6xl max-w-none ">elevating your style</h2>
+                <img class="md:w-20 max-w-none " src="Asset/alert-triangle.png" alt="">
+                <h2 class="my-auto font-jersey text-white text-6xl max-w-none ">elevating your style</h2>
+                <img class="md:w-20 max-w-none " src="Asset/alert-triangle.png" alt="">
+                <h2 class="my-auto font-jersey text-white text-6xl max-w-none ">elevating your style</h2>
+                <img class="md:w-20 max-w-none " src="Asset/alert-triangle.png" alt="">
+                <h2 class="my-auto font-jersey text-white text-6xl max-w-none ">elevating your style</h2>
+                <img class="md:w-20 max-w-none " src="Asset/alert-triangle.png" alt="">
+                <h2 class="my-auto font-jersey text-white text-6xl max-w-none ">elevating your style</h2>
+                <img class="md:w-20 max-w-none " src="Asset/alert-triangle.png" alt="">
                 </div>
+                <script src="js\txtjln.js"></script>
             </div>
     
             <div class="abs" id="abs">
@@ -101,10 +110,10 @@
             </div>
     
             <div class="image-mem">
-                <img src="Asset/arkan.png" alt="">
-                <img src="Asset/gwe.png" alt="">
-                <img src="Asset/isal.png" alt="">
-                <img src="Asset/kumar.png" alt="">
+                <img src="Asset/" alt="">
+                <img src="Asset/" alt="">
+                <img src="Asset/" alt="">
+                <img src="Asset/" alt="">
             </div>
             <div class="tk">
                 <div class="crtul" id="crtul"><h1>Our Collection</h1></div>
@@ -115,7 +124,7 @@
                         <div class="crd">
                             <h3>{{ $row->product }}</h3>
                             <div class="bwh">
-                                <h3>{{ $row->price }}</h3>
+                                <h3>Rp.{{ $row->price }}</h3>
                                 <a href="#" class="crb">Buy Now</a>
                             </div>
                         </div>
@@ -124,7 +133,7 @@
             </div>
         </div>
         </Main>
-        <script src="script.js"></script>
+        
     
         <Footer>
             <section class="footer">
@@ -158,5 +167,6 @@
                 </div>
             </section>    
         </Footer>
+        <!--script src="js\script.js"></script-->
 </body>
 </html>
