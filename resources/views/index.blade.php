@@ -76,8 +76,8 @@
         </script-->
         </header>
         <Main>
-            <div class="" id="clt">
-                <img src="Asset/Virtualthreads 1.png" class="px-4 " alt="Collection" id="image1">
+            <div class="flex justify-center" id="clt">
+                <img src="Asset/Virtualthreads 1.png" class="w-full   px-4" alt="Collection" id="image1">
             </div>
     
             <div id="txtjln" class="flex truncate py-10 ">
@@ -97,23 +97,23 @@
                 </div>
                 <script src="js\txtjln.js"></script>
             </div>
-    
-            <div class="abs" id="abs">
-                <h2>About Us</h2>
-                <div class="p1">
-                <p>Kami adalah startup brand desain baju yang didirikan pada tahun 2024, dengan misi menghadirkan desain kekinian yang memadukan kreativitas dan inovasi dalam setiap desain. Berangkat dari semangat untuk mengekspresikan gaya hidup modern dan dinamis, kami percaya bahwa setiap pakaian harus mencerminkan kepribadian dan keunikan pemakainya.</p>
+            <div class="flex md:flex-row flex-col px-4 items-center md:justify-center ">
+                <div class="flex flex-col space-y-3 " id="abs">
+                    <div class="max-h-60 max-w-161 font-monserrat border px-2 py-2 rounded-md h-auto">
+                        <h2 class="font-bold text-xl md:text-2xl">About Us</h2>
+                        <p class="text-justify pt-2 md:text-sm lg:text-base text-xs ">Kami adalah startup brand desain baju yang didirikan pada tahun 2024, dengan misi menghadirkan desain kekinian yang memadukan kreativitas dan inovasi dalam setiap desain. Berangkat dari semangat untuk mengekspresikan gaya hidup modern dan dinamis, kami percaya bahwa setiap pakaian harus mencerminkan kepribadian dan keunikan pemakainya.</p>
+                    </div>
+                    <div class="">
+                        <img src="Asset/image.png" class="max-h-60 h-auto ">
+                    </div>
                 </div>
-            </div>
-    
-            <div class="gmbrjls">
-                <img src="Asset/image.png" alt="">
-            </div>
-    
-            <div class="image-mem">
-                <img src="Asset/" alt="">
-                <img src="Asset/" alt="">
-                <img src="Asset/" alt="">
-                <img src="Asset/" alt="">
+                
+                <div class="flex truncate">
+                    <img src="Asset/2.png" class=" ">
+                    <img src="Asset/" class=" ">
+                    <img src="Asset/" class=" ">
+                    <img src="Asset/" class=" ">
+                </div>
             </div>
             <div class="tk">
                 <div class="crtul" id="crtul"><h1>Our Collection</h1></div>
