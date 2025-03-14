@@ -134,7 +134,7 @@
                             <h3 class="text-lg pb-3">{{ $row->product }}</h3>
                             <div class="flex justify-between">
                                 <h3 class="">Rp.{{ $row->price }}</h3>
-                                <a href=" https://wa.me/6282138448982" class="font-medium border rounded-sm w-36 text-center text-lg">Buy Now</a>
+                                <a href="https://wa.me/6282138448982" class="font-medium border rounded-sm w-36 text-center text-lg">Buy Now</a>
                             </div>
                         </div>
                     </div>
@@ -174,8 +174,9 @@
                     <div class="text-center space-y-2" data-aos="fade-left" data-aos-duration="2000">
                         <h4 class="text-lg">Contact Us</h4>
                         <ul class="list-none space-y-2">
-                            <li><a href="#">Evostyle@gmail.com</a></li>
-                            <li><a href="#">+6282138448982</a></li>
+                            <li><a href="#">evoostylee3@gmail.com</a></li>
+                            <li><a href="https://wa.me/6282138448982">+6282138448982</a></li>
+                            <li><a href="https://www.instagram.com/evo.stylee/">@evo.style</a></li>
                         </ul>
                     </div>
                 </div>    
